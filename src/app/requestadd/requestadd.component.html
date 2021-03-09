@@ -1,0 +1,58 @@
+<div class="container-fluid outer ">
+    <div class="py-5">
+        <div class="container">
+            <h3 class="text-center">Liên hệ</h3>
+            <form #myForm1 class="form" [formGroup]="addform">
+                <div class="form-group">
+                    <label>Gửi tới:</label>
+                    <!-- <span style="color: red;">*</span> -->
+                    <input type="text" class="form-control" 
+                    placeholder="Quản trị viên" formControlName="Quantri">
+                    <!-- <span class="text-danger"
+                        *ngIf="addform.get('NameObj').touched && addform.get('NameObj').hasError('required')">Nhập tên
+                        khoa/môn</span> -->
+                </div>
+                <div class="form-group">
+                    <label for="">Họ tên:</label>
+                    <span style="color: red;">(bắt buộc)</span>
+                    <input type="text" class="form-control"
+                        placeholder="Tên của bạn"
+                        formControlName="name">
+                    <span class="text-danger"
+                    *ngIf="addform.get('name').touched && addform.get('name').hasError('required')">Nhập tên</span>
+                </div>
+                <div class="form-group">
+                    <label for="">Tiêu đề: &nbsp;</label>
+                    <span style="color: red;">(bắt buộc)</span>
+                    <input type="text" class="form-control" placeholder="Giống tiêu đề trong gửi email vậy á !!!" formControlName="subject" required>
+                    <span class="text-danger"
+                        *ngIf="addform.get('subject').touched && addform.get('subject').hasError('required')">Nhập tiêu đề</span>
+                </div>
+                <div class="form-group">
+                    <label for="">Nội dung: &nbsp;</label>
+                    <span style="color: red;">(bắt buộc)</span>
+                    <textarea class="form-control" placeholder="Bạn muốn nói gì với chúng mình nè!" formControlName="content" cols="40" rows="5" required></textarea>
+                    <span class="text-danger"
+                    *ngIf="addform.get('content').touched && addform.get('content').hasError('required')">Nhập nội dung</span>
+                </div>
+                <div class="form-group">
+                    <label for="">Số điện thoại:</label>
+                    <input type="tel" class="form-control" placeholder="Số điện thoại của bạn" formControlName="phone">
+                </div>
+                <div class="form-group">
+                    <label for="">Email: &nbsp;</label>
+                    <input type="email" class="form-control" placeholder="Email của bạn" formControlName="mail" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Chọn hình: (nếu có)</label>
+                    <input type="text" class="form-control" placeholder="link image" formControlName="hinh">
+                </div>
+                <div class="form-group">
+                    <label for="">Chọn file: (nếu có)</label>
+                    <input type="file" class="form-control" placeholder="Chọn file của bạn" formControlName="file">
+                </div>
+                <div class="btn btn-success" (click)="UpRequest()">Send</div>
+            </form>
+        </div>
+    </div>
+</div>

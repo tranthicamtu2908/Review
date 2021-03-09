@@ -1,0 +1,139 @@
+<div class="container-fluid outer">
+  <div class="container">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/IUH_Banner.jpg" width="100%" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/iuh5.png" width="100%" />
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/bia-web-tuyen-sinh-2020.gif" width="100%" />
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <br />
+    <p id="intro">
+      Đây là nơi để bạn có thể review cảm nhận của bản thân về chương trình giáo
+      dục của trường Đại học Công Nghiệp thành phố Hồ Chí Minh. Hoặc tham khảo
+      review của những người khác.<br />
+      <span style="font-style: italic; color: red"
+        >Lưu ý: Page chỉ là review tham khảo, không có mục đích đả kích đến tổ
+        chức, các nhân nào</span
+      >
+    </p>
+
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-lg-8">
+        <div class="new_hot pt-3">
+          <div class="row">
+            <img
+              src="assets/img/iconlua-removebg-preview.png"
+              style="width: 10%"
+            />
+            <h4 style="font-weight: bold" class="mt-4">Review Hot</h4>
+          </div>
+          <table
+            class="table table-hover"
+            style="border-right: 1px solid rgb(218, 212, 212); padding-right: 0"
+          >
+            <tbody>
+              <ng-container *ngFor="let list of reviewHotList; let i = index">
+                <tr (click)="direc(list);">
+                  <td style="width: 15%">
+                    <img
+                      src="assets/img/top{{ i + 1 }}.png"
+                      style="width: 60%; margin-left: 10px"
+                    />
+                  </td>
+                  <td class="clamp">
+                    <b>{{ list.name }}</b> đã review
+                    <span style="color: blue">{{ list.nameNumberCode }}</span>
+                    <!-- Chưa lên icon vì chưa install ng zorro -->
+                    <ng-container
+                      *ngFor="let item of [].constructor(list.star)"
+                    >
+                      <i
+                        nz-icon
+                        nzType="star"
+                        style="color: rgb(245, 224, 37)"
+                        nzTheme="fill"
+                      ></i>
+                    </ng-container>
+                    <br />
+                    {{ list.content }}
+                  </td>
+                </tr>
+              </ng-container>
+            </tbody>
+          </table>
+        </div>
+        <div class="text-center mt-5">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.8576299626598!2d106.68530841405698!3d10.822205392290485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3174deb3ef536f31%3A0x8b7bb8b7c956157b!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBDw7RuZyBuZ2hp4buHcCBUUC5IQ00!5e0!3m2!1svi!2s!4v1597035165039!5m2!1svi!2s"
+            frameborder="0"
+            style="border: 0"
+            allowfullscreen=""
+            aria-hidden="false"
+            width="100%"
+            height="400px"
+            tabindex="0"
+          ></iframe>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <div class="ganday pt-3">
+          <div class="row mb-3">
+            <img
+              src="assets/img/lich.png"
+              style="width: 13%; margin-top: 15px"
+              height="40px"
+            />
+            <h4 style="font-weight: bold" class="mt-4 ml-3">Review gần đây</h4>
+          </div>
+          <table
+            class="table table-hover"
+            style="border-right: 1px solid rgb(218, 212, 212); padding-right: 0"
+          >
+            <tbody>
+              <tr *ngFor="let x of reviewNewList">
+                <td></td>
+                <td class="clamp" (click)="direc(x)">
+                  <b>{{ x.name }}</b> đã review
+                  <span style="color: blue">{{ x.nameNumberCode }}</span>
+                  <ng-container *ngFor="let item of [].constructor(x.star)">
+                    <i
+                      nz-icon
+                      nzType="star"
+                      style="color: rgb(245, 224, 37)"
+                      nzTheme="fill"
+                    ></i>
+                  </ng-container>
+                  <br />
+                  {{ x.content }}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

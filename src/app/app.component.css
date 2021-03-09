@@ -1,0 +1,41 @@
+.container-fluid{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head{
+    
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "Helvetica Neue Condensed Black", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    color: #0c1980;
+    letter-spacing: 2px;
+    text-shadow: 4px 2px 4px #848484;
+    line-height: 1.2;
+}
+header{
+    background-image: linear-gradient(rgb(94, 164, 221), rgb(184, 225, 226));
+}
+header .btn{
+    padding-left: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+header a{
+    text-decoration: none;
+    color: #384289;
+}
+header a:hover {
+    color: rgb(190, 16, 16);
+    background-color: rgb(210, 216, 221);
+}
+header .btn:hover{
+    background-color: rgb(210, 216, 221);
+}
+footer{
+    background-image: linear-gradient(rgb(94, 164, 221), rgb(184, 225, 226));
+}
+footer a{
+    color: rgb(6, 6, 201);
+} 

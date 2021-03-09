@@ -1,0 +1,25 @@
+
+#intro{
+    border: 8px double #384289;
+    border-radius: 20px;
+    padding: 15px;
+}
+.outer{
+    background-color: rgb(248, 246, 246);
+}
+.new_hot table{
+    background-color: rgb(156, 183, 206);
+}
+
+.clamp{
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+
+.table td{
+    padding: 0;
+    padding-top: 10px;
+}
+

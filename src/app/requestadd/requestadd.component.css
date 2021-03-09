@@ -1,0 +1,13 @@
+
+.outer{
+    background-color: rgb(248, 246, 246);
+}
+label{
+    font-weight: bold;
+}
+textarea.ng-touched.ng-invalid{
+    border: 1px solid red;
+}
+input.ng-touched.ng-invalid{
+    border: 1px solid red;
+}

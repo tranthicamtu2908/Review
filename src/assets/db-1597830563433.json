@@ -1,0 +1,283 @@
+{
+  "khoa": [
+    {
+      "id": 1,
+      "logo": "../../assets/icon/cokhi-removebg-preview.png",
+      "name": "KHOA CÔNG NGHỆ CƠ KHÍ",
+      "contact": "Văn phòng: Lầu 3 Nhà X - 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Tp. Hồ Chí Minh",
+      "tel": "Điện thoại: 083 8940 390 - 179 (C.Nhẹ), 183 (C.Dung)",
+      "mail": "",
+      "web": ""
+    },
+    {
+      "id": 2,
+      "logo": "../../assets/icon/cntt.png",
+      "name": "KHOA CÔNG NGHỆ THÔNG TIN",
+      "contact": "Văn phòng: Lầu 1 Nhà B - 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Tp. Hồ Chí Minh",
+      "tel": "",
+      "mail": "",
+      "web": "Website: FIT.IUH.EDU.VN"
+    },
+    {
+      "id": 3,
+      "logo": "../../assets/icon/dien.png",
+      "name": "KHOA CÔNG NGHỆ ĐIỆN",
+      "contact": "Văn phòng: Lầu 5 nhà X - 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Tp. Hồ Chí Minh",
+      "tel": "Điện thoại: (08)3 8940 390 - 175",
+      "mail": "Email: feet@iuh.edu.vn",
+      "web": ""
+    },
+    {
+      "id": 4,
+      "logo": "../../assets/icon/dientu.jpg",
+      "name": "KHOA CÔNG NGHỆ ĐIỆN TỬ",
+      "contact": "Văn phòng: Tòa nhà X, lầu 7, X7.2. - Số 12 Nguyễn Văn Bảo, P4, Quận Gò Vấp.",
+      "tel": "Điện thoại: (08)38940390-172.",
+      "mail": "",
+      "web": ""
+    },
+    {
+      "id": 5,
+      "logo": "../../assets/icon/dongluc.jpg",
+      "name": "KHOA CÔNG NGHỆ ĐỘNG LỰC",
+      "contact": "Văn phòng: Lầu 4 Nhà X - 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Tp. Hồ Chí Minh",
+      "tel": "Điện thoại: (08) 38 940 390 - 862.241.181",
+      "mail": "Email: faet@iuh.edu.vn",
+      "web": ""
+    },
+    {
+      "id": 6,
+      "logo": "../../assets/icon/nhietlanh.png",
+      "name": "KHOA CÔNG NGHỆ NHIỆT - LẠNH",
+      "contact": "Văn phòng: Lầu 6 Nhà X - 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Tp. Hồ Chí Minh",
+      "tel": "Điện thoại: (08) 38 940 390 - 196",
+      "mail": "Email: fhre@iuh.edu.vn",
+      "web": ""
+    },
+    {
+      "id": 7,
+      "logo": "../../assets/icon/may.jpg",
+      "name": "KHOA CÔNG NGHỆ MAY- THỜI TRANG",
+      "contact": "Văn phòng: Lầu 5 Nhà D - 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Tp. Hồ Chí Minh",
+      "tel": "Điện thoại: (08) 38 940 390 - 195",
+      "mail": "Email: fgd@iuh.edu.vn",
+      "web": ""
+    },
+    {
+      "id": 8,
+      "logo": "../../assets/icon/hoa.jpg",
+      "name": "KHOA CÔNG NGHỆ HÓA HỌC",
+      "contact": "Văn phòng: Nhà F phòng 1.10",
+      "tel": "Điện thoại: 8 390490 / 163-545",
+      "mail": "",
+      "web": ""
+    },
+    {
+      "id": 9,
+      "logo": "../../assets/icon/ketoan.jpg",
+      "name": "KHOA KẾ TOÁN - KIỂM TOÁN",
+      "contact": "Địa chỉ: Tầng 3 Nhà D, Trường ĐHCN TP.HCM (12 Nguyễn Văn Bảo, Quận Gò Vấp, TP.HCM, Việt Nam)",
+      "tel": "Điện thoại: (+84-8) 394 0390 – Ext: 851; 852; 234",
+      "mail": "Email: info@faa.edu.vn",
+      "web": ""
+    },
+    {
+      "id": 10,
+      "logo": "../../assets/icon/khoahoc.png",
+      "name": "KHOA KHOA HỌC CƠ BẢN",
+      "contact": "Văn phòng: Tầng trệt Nhà D - 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Tp. Hồ Chí Minh",
+      "tel": "Điện thoại: (028) 38 940 390 - 154, 0908 110 186",
+      "mail": "Email: ffs@iuh.edu.vn",
+      "web": ""
+    },
+    {
+      "id": 11,
+      "logo": "../../assets/icon/chinhtri.jpg",
+      "name": "KHOA LÝ LUẬN CHÍNH TRỊ",
+      "contact": "Văn phòng: Phòng 2, Lầu 1 Nhà D - 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Tp. Hồ Chí Minh",
+      "tel": "Điện thoại: (08) 38 940 390 - 153, 228, 229",
+      "mail": "Email: khoalyluanchinhtri@iuh.edu.vn",
+      "web": ""
+    },
+    {
+      "id": 12,
+      "logo": "../../assets/icon/ngoaingu.jpg",
+      "name": "KHOA NGOẠI NGỮ",
+      "contact": "Tầng trệt nhà B trường Đại học Công nghiệp TP.HCM",
+      "tel": "Tel: (08)38940390, Ext: 151 - Fax: (08)38946268",
+      "mail": "Email: khoangoaingu_dhcn@gmail.com",
+      "web": ""
+    },
+    {
+      "id": 13,
+      "logo": "../../assets/icon/quantri.jpg",
+      "name": "KHOA QUẢN TRỊ KINH DOANH",
+      "contact": "Văn phòng: Lầu 3 Nhà D - 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Tp. Hồ Chí Minh",
+      "tel": "Điện thoại: 0283.8940 390 – 158",
+      "mail": "Email: infofba@iuh.edu.vn​",
+      "web": ""
+    },
+    {
+      "id": 14,
+      "logo": "../../assets/icon/nganhang.png",
+      "name": "KHOA TÀI CHÍNH - NGÂN HÀNG",
+      "contact": "Văn phòng: Lầu 2 Nhà V - 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Tp. Hồ Chí Minh",
+      "tel": "",
+      "mail": "",
+      "web": ""
+    },
+    {
+      "id": 15,
+      "logo": "../../assets/icon/dulich.png",
+      "name": "KHOA THƯƠNG MẠI - DU LỊCH",
+      "contact": "Văn phòng: Lầu 2 Nhà V - 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Tp. Hồ Chí Minh",
+      "tel": "",
+      "mail": "",
+      "web": "Website: FCT.IUH.EDU.VN"
+    },
+    {
+      "id": 16,
+      "logo": "../../assets/icon/xaydung.png",
+      "name": "KHOA KỸ THUẬT XÂY DỰNG",
+      "contact": "Văn phòng: Phòng 1, Lầu 1 Nhà A - 12 Nguyễn Văn Bảo, Phường 4, Quận Gò Vấp, Tp. Hồ Chí Minh",
+      "tel": "Điện thoại: (08) 38 940 390 - 207",
+      "mail": "Email: ce@iuh.edu.vn",
+      "web": ""
+    },
+    {
+      "id": 17,
+      "logo": "../../assets/icon/luat.jpg",
+      "name": "KHOA LUẬT",
+      "contact": "Phòng V2.7, Trường Đại học Công nghiệp Tp.Hồ Chí Minh, Số 12 Nguyễn Văn Bảo, Quận Gò Vấp, TP.HCM, Việt Nam.",
+      "tel": "",
+      "mail": "",
+      "web": "Website: IEL.IUH.EDU.VN"
+    }
+  ],
+  "mon": [
+    {
+      "id": 1,
+      "link": "../../assets/img/toancc.png",
+      "name": "toán cao cấp"
+    },
+    {
+      "id": 2,
+      "link": "../../assets/img/mac.jpg",
+      "name": "Những nguyên lý cơ bản của chủ nghĩa Mác - Lênin"
+    },
+    {
+      "id": 3,
+      "link": "../../assets/img/logic.png",
+      "name": "Logic học"
+    },
+    {
+      "id": 4,
+      "link": "../../assets/img/vatli.jpg",
+      "name": "Vật lí đại cương"
+    },
+    {
+      "id": 5,
+      "link": "../../assets/img/tutuong.jpg",
+      "name": "Tư tưởng Hồ Chí Minh"
+    },
+    {
+      "id": 6,
+      "link": "../../assets/img/duongloi.jpg",
+      "name": "Đường lối cách mạng của Đảng cộng sản Việt Nam"
+    },
+    {
+      "id": 7,
+      "link": "../../assets/img/quocphong.jpg",
+      "name": "Giáo dục quốc phòng"
+    },
+    {
+      "id": 8,
+      "link": "../../assets/img/phapluat.jpg",
+      "name": "Pháp luật đại cương"
+    },
+    {
+      "id": 9,
+      "link": "../../assets/img/tinhoc.jpg",
+      "name": "Tin hoc văn phòng"
+    },
+    {
+      "id": 10,
+      "link": "../../assets/img/nhom.jpg",
+      "name": "Kỹ năng làm việc nhóm"
+    }
+  ],
+  "review": [
+    {
+      "id": 1,
+      "name": "Độc giả báo Eva",
+      "ob_rv": "Khoa Công nghệ thông tin",
+      "content": "lúc trc vào đây làm đc 2 tháng lương thì bèo vcl, dự án ko có BA =))) vào làm dự án dở hơi vcl, nhưng mình beginner thì cũng nhận, PM lúc đó là thằng Khổng Lìn Minh Hiếu cái đéo gì đấy bẩn bẩn thỉu thỉu- khoe khoang cl, có biết cái mẹ gì đâu, toàn đi ép mình, bắt làm mọi thứ trên đời.. cho dù làm tốt n cũng chửi mình (vì n ghét mình) Làm đc 2 tháng may quá out =)) thoát khỏi cty này đúng là vui mà.. sang cty khác cũng ở Keangnam, lúc đi ăn cơm gặp mặt n tí đấm cho trận =))) giờ n gặp mình sợ tè ra quần , nchung cty start up làm ăn thê snayf chăc sắp sập sớm =))",
+      "like": "",
+      "cmt": "",
+      "value_star": 2
+    },
+    {
+      "id": 2,
+      "name": "Độc giả báo Eva",
+      "ob_rv": "Khoa Công nghệ thông tin",
+      "content": "lúc trc vào đây làm đc 2 tháng lương thì bèo vcl, dự án ko có BA =))) vào làm dự án dở hơi vcl, nhưng mình beginner thì cũng nhận, PM lúc đó là thằng Khổng Lìn Minh Hiếu cái đéo gì đấy bẩn bẩn thỉu thỉu- khoe khoang cl, có biết cái mẹ gì đâu, toàn đi ép mình, bắt làm mọi thứ trên đời.. cho dù làm tốt n cũng chửi mình (vì n ghét mình) Làm đc 2 tháng may quá out =)) thoát khỏi cty này đúng là vui mà.. sang cty khác cũng ở Keangnam, lúc đi ăn cơm gặp mặt n tí đấm cho trận =))) giờ n gặp mình sợ tè ra quần , nchung cty start up làm ăn thê snayf chăc sắp sập sớm =))",
+      "like": "",
+      "cmt": "",
+      "value_star": 1
+    },
+    {
+      "id": 3,
+      "name": "Độc giả báo Eva",
+      "ob_rv": "Khoa Công nghệ thông tin",
+      "content": "lúc trc vào đây làm đc 2 tháng lương thì bèo vcl, dự án ko có BA =))) vào làm dự án dở hơi vcl, nhưng mình beginner thì cũng nhận, PM lúc đó là thằng Khổng Lìn Minh Hiếu cái đéo gì đấy bẩn bẩn thỉu thỉu- khoe khoang cl, có biết cái mẹ gì đâu, toàn đi ép mình, bắt làm mọi thứ trên đời.. cho dù làm tốt n cũng chửi mình (vì n ghét mình) Làm đc 2 tháng may quá out =)) thoát khỏi cty này đúng là vui mà.. sang cty khác cũng ở Keangnam, lúc đi ăn cơm gặp mặt n tí đấm cho trận =))) giờ n gặp mình sợ tè ra quần , nchung cty start up làm ăn thê snayf chăc sắp sập sớm =))",
+      "like": "",
+      "cmt": "",
+      "value_star": 3
+    },
+    {
+      "id": 4,
+      "name": "Độc giả báo Eva",
+      "ob_rv": "Khoa Công nghệ thông tin",
+      "content": "lúc trc vào đây làm đc 2 tháng lương thì bèo vcl, dự án ko có BA =))) vào làm dự án dở hơi vcl, nhưng mình beginner thì cũng nhận, PM lúc đó là thằng Khổng Lìn Minh Hiếu cái đéo gì đấy bẩn bẩn thỉu thỉu- khoe khoang cl, có biết cái mẹ gì đâu, toàn đi ép mình, bắt làm mọi thứ trên đời.. cho dù làm tốt n cũng chửi mình (vì n ghét mình) Làm đc 2 tháng may quá out =)) thoát khỏi cty này đúng là vui mà.. sang cty khác cũng ở Keangnam, lúc đi ăn cơm gặp mặt n tí đấm cho trận =))) giờ n gặp mình sợ tè ra quần , nchung cty start up làm ăn thê snayf chăc sắp sập sớm =))",
+      "like": "",
+      "cmt": "",
+      "value_star": 5
+    },
+    {
+      "id": 5,
+      "name": "Độc giả báo Eva",
+      "ob_rv": "Khoa Công nghệ thông tin",
+      "content": "lúc trc vào đây làm đc 2 tháng lương thì bèo vcl, dự án ko có BA =))) vào làm dự án dở hơi vcl, nhưng mình beginner thì cũng nhận, PM lúc đó là thằng Khổng Lìn Minh Hiếu cái đéo gì đấy bẩn bẩn thỉu thỉu- khoe khoang cl, có biết cái mẹ gì đâu, toàn đi ép mình, bắt làm mọi thứ trên đời.. cho dù làm tốt n cũng chửi mình (vì n ghét mình) Làm đc 2 tháng may quá out =)) thoát khỏi cty này đúng là vui mà.. sang cty khác cũng ở Keangnam, lúc đi ăn cơm gặp mặt n tí đấm cho trận =))) giờ n gặp mình sợ tè ra quần , nchung cty start up làm ăn thê snayf chăc sắp sập sớm =))",
+      "like": "",
+      "cmt": "",
+      "value_star": 4
+    },
+    {
+      "id": 6,
+      "name": "Độc giả báo Eva",
+      "ob_rv": "Khoa Công nghệ thông tin",
+      "content": "lúc trc vào đây làm đc 2 tháng lương thì bèo vcl, dự án ko có BA =))) vào làm dự án dở hơi vcl, nhưng mình beginner thì cũng nhận, PM lúc đó là thằng Khổng Lìn Minh Hiếu cái đéo gì đấy bẩn bẩn thỉu thỉu- khoe khoang cl, có biết cái mẹ gì đâu, toàn đi ép mình, bắt làm mọi thứ trên đời.. cho dù làm tốt n cũng chửi mình (vì n ghét mình) Làm đc 2 tháng may quá out =)) thoát khỏi cty này đúng là vui mà.. sang cty khác cũng ở Keangnam, lúc đi ăn cơm gặp mặt n tí đấm cho trận =))) giờ n gặp mình sợ tè ra quần , nchung cty start up làm ăn thê snayf chăc sắp sập sớm =))",
+      "like": "",
+      "cmt": "",
+      "value_star": 4
+    },
+    {
+      "id": 7,
+      "name": "Độc giả báo Eva",
+      "ob_rv": "Khoa Công nghệ thông tin",
+      "content": "lúc trc vào đây làm đc 2 tháng lương thì bèo vcl, dự án ko có BA =))) vào làm dự án dở hơi vcl, nhưng mình beginner thì cũng nhận, PM lúc đó là thằng Khổng Lìn Minh Hiếu cái đéo gì đấy bẩn bẩn thỉu thỉu- khoe khoang cl, có biết cái mẹ gì đâu, toàn đi ép mình, bắt làm mọi thứ trên đời.. cho dù làm tốt n cũng chửi mình (vì n ghét mình) Làm đc 2 tháng may quá out =)) thoát khỏi cty này đúng là vui mà.. sang cty khác cũng ở Keangnam, lúc đi ăn cơm gặp mặt n tí đấm cho trận =))) giờ n gặp mình sợ tè ra quần , nchung cty start up làm ăn thê snayf chăc sắp sập sớm =))",
+      "like": "",
+      "cmt": "",
+      "value_star": 5
+    },
+    {
+      "id": 8,
+      "name": "Độc giả báo Eva",
+      "ob_rv": "Khoa Công nghệ thông tin",
+      "content": "lúc trc vào đây làm đc 2 tháng lương thì bèo vcl, dự án ko có BA =))) vào làm dự án dở hơi vcl, nhưng mình beginner thì cũng nhận, PM lúc đó là thằng Khổng Lìn Minh Hiếu cái đéo gì đấy bẩn bẩn thỉu thỉu- khoe khoang cl, có biết cái mẹ gì đâu, toàn đi ép mình, bắt làm mọi thứ trên đời.. cho dù làm tốt n cũng chửi mình (vì n ghét mình) Làm đc 2 tháng may quá out =)) thoát khỏi cty này đúng là vui mà.. sang cty khác cũng ở Keangnam, lúc đi ăn cơm gặp mặt n tí đấm cho trận =))) giờ n gặp mình sợ tè ra quần , nchung cty start up làm ăn thê snayf chăc sắp sập sớm =))",
+      "like": "",
+      "cmt": "",
+      "value_star": 5
+    }
+  ]
+}

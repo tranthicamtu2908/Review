@@ -1,0 +1,356 @@
+<div class="container-fluid outer">
+  <div class="py-3">
+    <div class="container">
+      <div class="outer-header">
+        <div class="row py-3">
+          <div class="col-sm-12 col-md-7 col-lg-7">
+            <div *ngFor="let x of khoaList">
+              <div *ngIf="onlyID === x.numberCode" class="row">
+                <div class="col-2">
+                  <img src="{{ x.image }}" style="width: 100%" />
+                </div>
+                <div class="col-10">
+                  <p class="mr-3">
+                    <b>{{ x.name }}</b>
+                  </p>
+                  <div class="d-flex">
+                    <img
+                      src="../../assets/icon/contact.png"
+                      style="width: 30px; height: 30px"
+                    />
+                    <div class="ml-3">
+                      <p>{{ x.address }}</p>
+                      <p>{{ x.email }}</p>
+                      <p>{{ x.numberPhone }}</p>
+                      <p>{{ x.url }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div *ngFor="let item of monList">
+              <div *ngIf="onlyID === item.numberCode">
+                <p
+                  class="text-center mt-3"
+                  style="
+                    font-size: 40px;
+                    color: rgb(11, 11, 161);
+                    text-transform: uppercase;
+                  "
+                >
+                  <b>{{ item.name }}</b>
+                </p>
+                <p class="text-center" style="font-size: 20px; color: red">
+                  <b>Mã môn: {{ item.numberCode }}</b>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-5 col-lg-5">
+            <div
+              class="d-flex align-items-center justify-content-center btn btn-success mt-3"
+              style="border-radius: 20px; width: 80%"
+              data-toggle="modal"
+              data-target="#myModal"
+
+            >
+              <img
+                src="../../assets/icon/pen-removebg-preview.png"
+                alt=""
+                style="width: 20%"
+              />
+              <a class="ml-1">Viết Review</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="review">
+        <ng-container *ngFor="let z of reviewList">
+          <div *ngIf="onlyID === z.numberCode">
+            <div class="review_card card mt-4" [id]="z.id" (click)="getIDqr(z)">
+              <header class="card-header">
+                <p class="card-header-title">
+                  <b>{{ z.name }} &nbsp; ({{ z.position }}) &nbsp;</b>
+                  <ng-container *ngFor="let item of [].constructor(z.star)">
+                    <i
+                      nz-icon
+                      nzType="star"
+                      style="color: rgb(245, 224, 37)"
+                      nzTheme="fill"
+                    ></i>
+                  </ng-container>
+                </p>
+              </header>
+              <div class="card-content p-4">
+                {{ z.content }}
+              </div>
+              <div class="card-footer py-0">
+                <div class="row">
+                  <div
+                    class="col-4"
+                    style="border-right: 1px solid"
+                    data-toggle="modal"
+                    data-target="#ModalReply"
+                    (click)="getID(z)"
+                  >
+                    <div class="row">
+                      <p class="col-6 text-right txt">Reply</p>
+                      <div class="col-6">
+                        <img
+                          src="../../assets/icon/cmt.png"
+                          style="width: 23px; height: 23px"
+                          class="i"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3" style="border-right: 1px solid">
+                    <div class="row" (click)="updateLike(z.id)">
+                      <p class="col-6 text-right txt">{{ z.like }}</p>
+                      <div class="col-6">
+                        <img
+                          src="../../assets/icon/like.png"
+                          style="width: 20px"
+                          class="i"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-3" style="border-right: 1px solid">
+                    <div class="row" (click)="updateDisLike(z.id)">
+                      <p class="col-6 text-right txt">{{ z.disLike }}</p>
+                      <div class="col-6">
+                        <img
+                          src="../../assets/icon/dislike.png"
+                          style="width: 20px"
+                          class="i"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2 text-right">
+                    <img
+                      src="../../assets/icon/up-arrow-icon.png"
+                      style="width: 20px"
+                      data-toggle="collapse"
+                      data-target="#comment"
+                      class="i"
+                    />
+                  </div>
+                </div>
+                <div class="collapse" id="comment">
+                  <table class="table table-striped">
+                    <tbody>
+                      <ng-container *ngFor="let c of commentList">
+                        <tr *ngIf="c.numberCode == z.id">
+                          <td>
+                            <b>{{ c.name }}</b
+                            ><br />
+                            {{ c.content }}
+                          </td>
+                          <td></td>
+                        </tr>
+                      </ng-container>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header" style="background-color: rgb(216, 215, 215)">
+        <h4 class="modal-title">Viết review</h4>
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form #myForm class="form" [formGroup]="upForm" (ngSubmit)="UpReview()">
+          <div class="form-group">
+            <label for="name" style="font-weight: bold"> Tên họ </label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Có thể xưng tên thật hoặc không"
+              id="name"
+              formControlName="txtName"
+            />
+          </div>
+          <div class="form-group">
+            <label for="chucvu" style="font-weight: bold"> Chức vụ </label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Sinh viên/ Giảng viên/ Ngoại lai"
+              id="chucvu"
+              formControlName="txtChucVu"
+            />
+          </div>
+          <div class="form-group">
+            <label for="obj" style="font-weight: bold">
+              Đối tượng được review
+            </label>
+            <ng-container *ngFor="let x of khoaList">
+              <ng-container *ngIf="onlyID === x.numberCode">
+                <input
+                  class="form-control"
+                  id="obj"
+                  formControlName="txtObj"
+                  placeholder="{{ x.name }}"
+                />
+              </ng-container>
+            </ng-container>
+            <ng-container *ngFor="let item of monList">
+              <ng-container *ngIf="onlyID === item.numberCode">
+                <input
+                  class="form-control"
+                  id="obj"
+                  formControlName="txtObj"
+                  placeholder="{{ item.name }}"
+                />
+              </ng-container>
+            </ng-container>
+          </div>
+          <div class="form-group">
+            <label for="mess" style="font-weight: bold">
+              Reivew: <span style="color: red">(Bắt buộc)</span>
+            </label>
+            <textarea
+              id="mess"
+              cols="30"
+              rows="10"
+              placeholder="Tối thiểu 10 kí tự nha!"
+              class="form-control"
+              formControlName="txtMess"
+            ></textarea>
+            <span
+              class="text-danger"
+              *ngIf="
+                upForm.get('txtMess').touched &&
+                upForm.get('txtMess').hasError('required')
+              "
+              >Nhập Review</span
+            >
+            <span
+              class="text-danger"
+              *ngIf="
+                upForm.get('txtMess').touched &&
+                upForm.get('txtMess').hasError('minLength')
+              "
+            ></span>
+          </div>
+          <div class="form-group">
+            <label for="danhgia" style="font-weight: bold"> Đánh giá </label>
+            <select
+              id="danhgia"
+              class="form-control"
+              formControlName="slcDanhGia"
+            >
+              <option value="1">1 điểm - quá tệ, không còn gì để nói</option>
+              <option value="2">2 điểm - tệ, không hài lòng</option>
+              <option value="3">3 điểm - cũng tạm</option>
+              <option value="4">4 điểm - tốt, hài lòng</option>
+              <option value="5">5 điểm - rất tốt, vô cùng hài lòng</option>
+            </select>
+          </div>
+        </form>
+        <p style="font-weight: bold; color: blue">
+          Người đăng chịu trách nhiệm về tính xác thực của nội dung!
+        </p>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button
+          type="submit"
+          class="btn btn-success"
+          [disabled]="!upForm.valid"
+          (click)="UpReview()"
+        >
+          Đăng Review
+        </button>
+        <button type="button" class="btn btn-success" data-dismiss="modal">
+          Hủy bỏ
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- The Modal Reply-->
+<div class="modal" id="ModalReply">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Reply</h4>
+        <button type="button" class="close" data-dismiss="modal">
+          &times;
+        </button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="form" [formGroup]="formCmt" (ngSubmit)="UpCmt()">
+          <div class="form-group">
+            <label for=""><b>Tên họ</b></label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Có thể xưng tên thật hoặc không"
+              formControlName="Ten"
+            />
+          </div>
+          <div class="form-group">
+            <label for=""
+              ><b>Comment <span style="color: red">(Bắt buộc)</span></b></label
+            >
+            <textarea
+              id=""
+              cols="30"
+              rows="10"
+              class="form-control"
+              placeholder="Tối thiểu 10 ký tự"
+              formControlName="Cmt"
+            ></textarea>
+            <span
+              class="text-danger"
+              *ngIf="
+                upForm.get('txtMess').touched &&
+                upForm.get('txtMess').hasError('required')
+              "
+              >Nhập Comment</span
+            >
+            <span
+              class="text-danger"
+              *ngIf="
+                upForm.get('txtMess').touched &&
+                upForm.get('txtMess').hasError('minLength')
+              "
+            ></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" (click)="UpComment()">
+          Đăng Comment
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="container-fluid outer">
+
+        <div class="container">
+            <table class="table table-hover table-striped">
+                <tbody>
+                    <tr *ngFor="let x of searchList" (click)="getIDqr(x)">
+                        <td></td>
+                        <td (click)="onClickReview(x)">
+                            <p class="mr-3"><b>{{x.name}}</b></p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+
+</div>

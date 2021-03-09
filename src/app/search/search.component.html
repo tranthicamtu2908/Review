@@ -1,0 +1,40 @@
+<div class="container-fluid outer">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-md-6 col-lg-6 khoa">
+                    <h3 class="text-center my-3">Review Khoa</h3>
+                    <table class="table table-hover table-striped">
+                        <tbody>
+                            <tr *ngFor="let x of khoaList">
+                                <td style="width: 13%;">
+                                    <img src="{{x.image}}" style="width: 100%;">
+                                </td>
+                                <td (click)="onClickReview(x)">
+                                    <p class="mr-3"><b>{{x.name}}</b></p>
+                                    <div class="d-flex">
+                                        <img src="../../assets/icon/contact.png" style="width: 30px; height: 30px;">
+                                        <div class="ml-3">
+                                            <p>{{x.address}}</p>
+                                            <p>Phone: {{x.numberPhone}}</p>
+                                            <p>Email: {{x.email}}</p>
+                                            <p>Web: {{x.url}}</p>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-md-12 col-md-6 col-lg-6 mon">
+                    <h3 class="text-center my-3">Review môn</h3>
+                    <div class="row mb-3" >
+                        <div class="col-sm-12 col-md-6 col-lg-6" *ngFor="let item of monList; index as i;" (click)="onClickReview(item)">
+                            <img src="{{item.image}}" alt="" style="width: 100%; margin-bottom: 10px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>
